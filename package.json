@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jms/typescript_101/issues"
   },
-  "homepage": "https://github.com/jms/typescript_101#readme"
+  "homepage": "https://github.com/jms/typescript_101#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.4"
+  }
 }
