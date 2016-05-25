@@ -38,3 +38,25 @@ pets.forEach(function(concat){
 document.body.innerHTML = "My pets are " + " " + pets;
 
 var e: void;
+
+// anonymous function without type inference 
+var add: (x: number, y:number) => number = function (x:number, y:number): number {
+    return x + y 
+}
+
+// REST PARAMETERS
+function buildName(firstName: string, ...restOfName: string[]) {
+	return firstName + " " + restOfName.join(" ");
+}
+
+var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+
+// optional params
+function buildNameOpt(firstName: string, lastName?: string) {
+    if (lastName)
+        return firstName + " " + lastName;
+    else
+        return firstName;
+}
+
+var result1 = buildNameOpt("Bob");  //works correctly now
